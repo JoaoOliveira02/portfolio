@@ -1,0 +1,85 @@
+<!--A <!DOCTYPE html>declaração define que este documento é um documento HTML5
+
+O <html>elemento é o elemento raiz de uma página HTML
+
+O <head>elemento contém metainformações sobre a página HTML
+
+O <title>elemento especifica um título para a página HTML (que é mostrado na barra de título do navegador ou na guia da página)
+
+O <body>elemento define o corpo do documento e é um recipiente para todos os conteúdos visíveis, como cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
+
+O <script> Esse elemento contém instruções de script ou aponta para um arquivo de script externo por meio do atributo src.
+
+O <meta> Define metadados, ou seja, informações sobre dados de um documento HTML. As <meta> tags vão dentro do elemento <head> e são usadas para especificar o conjunto de caracteres, o autor do documento, as configurações da janela de visualização etc.
+
+O <h1>elemento define um título grande
+ 
+O <link> É uma tag vazia, que contém apenas atributos e faz a relação do documento HTML com recursos externos, é comumente usado para vincular uma folha de estilo externa, também é usada para definir o favicon da página (ícone da aba do navegador), como outros recursos.    
+
+O <style> Essa tag é usada para declarar estilos (CSS) para um documento.
+
+O <p>elemento define um parágrafo-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Forma mais usada no mundo-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+
+
+        <!-- LINKA O ARQUIVO CSS COM O HTML
+        stylesheet = folha de estilo -->
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <!--Cabeçalhoo-->
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="index.html">Home</a>
+                <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            </nav>
+        </header>
+        <main class="apresentacao">    
+            <section class="apresentacao__conteudo">
+                    <!--TITULO-->
+                    <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível
+                    <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
+
+                    <!--TEXTO-->
+                    <p class="apresentacao__conteudo__texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, HTML 
+                        e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. 
+                        Vamos conversar?</p>
+
+                    <!--BOTÕES LINKS--> 
+                <div class="apresentacao__links"> 
+                    <h2 class="apresentacao__links_subtitulos">Acesse minhas redes: </h2>
+                    
+                        <a class="apresentacao__links__navegacao" href="https://github.com/JoaoOliveira02">
+                    <!-- Colocar imagem  -->
+                        <img src="assets/github.png" alt="Imagem Logo Github"> Github</a>
+
+                        <a class="apresentacao__links__navegacao" href="https://instagram.com/eujaozinhoo">
+                                <!-- Colocar imagem  -->
+                        <img src="assets/instagram.png" alt="Imagem Logo Instagram"> Instagram</a>
+
+                        <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/jo%C3%A3o-vitor-oliveira-640061190/">
+                                <!-- Colocar imagem  -->
+                        <img src="assets/linkedin.png" alt="Imagem Logo linkedin"> Linkedin</a>
+                            
+
+                </div>  
+
+            </section>
+            
+            <!--IMAGEM-->
+            <img class="apresentacao__imagem" src="assets/eu.jpg" alt="Foto da Joana Santos programando">
+        </main>
+        <footer class="rodape">
+            <p>Desenvolvido por João Vitor Ferreira Oliveira</p>
+        </footer>
+    </body>
+</html>
+
